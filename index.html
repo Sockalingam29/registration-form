@@ -4,27 +4,15 @@
 		<title>codedamn HTML Playground</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/styles.css"/>
+        <script src="app.js"></script>
 	</head>
-	<body>
-		<form>
-            <h1>Registration Form</h1>
-            <table>
-                <tr><td><h3>name:</h3></td>
-                <td><input id="submit"></td></tr>
-                <button type="submit" onclick="click()">
-                    Submit
-                </button>
-            </table>
-		</form>
-    <script src="https://bit.ly/codedamn-web-console"></script>
-    <script src="/script.js">
-        var btn=document.GetElementById("submit")
-        click(){
-            alert("hello");
-            if(btn.innerText=="")
-            alert("Wrong");
-        }
-    </script>
+	<body onload="typeWriter()">
+		<h1>
+			<div class="h1">Dark-<span id="super-font"></span></div>
+        	<small>Subscribe to get hand-picked personalized newsletters every month</small>
+    	</h1>
+        <button class="Next" onclick="load2()">Get started</button>
 	</body>
 </html>
+

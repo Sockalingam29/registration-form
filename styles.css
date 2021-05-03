@@ -1,5 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+:root{
+  --bg-black:#000000;
+  --plain-white:#dbdbdd;
+  --grey:rgb(72 72 72 / 50%);
+}
+body {
+    margin:0;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--bg-black);
+    color:var(--plain-white);
+    font-family: 'Kiwi Maru', serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+::selection { background: grey; }
+/*#trash{
+    margin:auto;
+    width: 90%;
+    border:1px solid white;
+    background-color:#1f1e1e;
+    pition:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }*/
+.h1{
+  font-size: 100px;
+}
+.Next{
+  font-family: 'Kiwi Maru', serif;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background: linear-gradient(to right,black,var(--grey));
+  color: var(--plain-white);
+  transition: background-color .8s;
+}
+.Next:hover{
+  background-color: rgb(148, 136, 136);
+}
+#super-font{
+  background-color: var(--grey);
+}
+.primary{
+  border:1px solid white;
+  padding:30px;
+  background-color: var(--grey);
+  border-radius: 10px;
+  margin: auto;
+  line-height: 100%;
+}
+input{
+  padding:8px;
+  border: 1px solid var(--bg-black);
+}
+td{
+ padding-top: 20px;
+ font-weight: bolder;
+}
+td .light{  
+  font-weight: normal;
+}
+::placeholder{
+  font-family:"Kiwi Maru", serif ;
+}
+input[type=radio]:hover{
+  cursor: pointer;
+}
+input[type=radio]{
+  -right: 100px;
+}
+input[type=checkbox]:hover{
+  cursor: pointer;
+}
+
+#terms{
+  text-align: center;
+  padding-top: 20px;
+}
+.cen{
+  display: block;
+  text-align: center;
+  margin-top: 20px !important;
+  margin: auto;
+}
+#test{
+  padding-right: 50px;
+}
+#message{
+  color: red;
+  font-size: small;
+  font-weight: lighter;
+}

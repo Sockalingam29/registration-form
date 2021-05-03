@@ -1,0 +1,67 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>codedamn HTML Playground</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/styles.css"/>
+        <script src="app.js"></script>
+	</head>
+	<body>
+		<form action="3.html">
+            <table class="primary">
+                <tr>
+                    <td>Name:</td>
+                    <td><input required placeholder="Enter your name*" id="submit"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="male" class="light" name="gender" >
+                        <label for="male" class="light">Male</label>
+                        <input type="radio" id="female"  name="gender" >
+                        <label for="female" class="light">Female</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Date of birth:</td>
+                    <td><input required type="date"></td>
+                </tr>
+                <tr>
+                    <td>Preferred genres:</td>
+                    <td>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" id="lifestyle">
+                            <label for="lifestyle" class="light">Lifestyle</label>
+                            </td>
+                            <td><input type="checkbox" id="tech">
+                            <label for="tech" class="light">Technology</label><br>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td><input type="checkbox" id="Science">
+                            <label for="Science" class="light">Science</label></td>
+                            <td><input type="checkbox" id="Mystery">
+                            <label for="Mystery" class="light">Mystery</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" id="finance">
+                            <label for="finance" class="light">Finance</label></td>
+                            <td><input type="checkbox" id="travel">
+                            <label for="travel" class="light">Travel</label>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <button class="Next cen" type="submit">Next</button>
+            </div>
+		</form>
+</html>
